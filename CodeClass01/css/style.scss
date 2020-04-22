@@ -1,0 +1,52 @@
+.header {
+	&__feedback {
+		&__franchise {}
+		&__payment {}
+		&__payment__button {}
+		&__telephones {}
+		&__telephones__button {}
+	}
+}
+.container {
+}
+.menu-positionfixed {
+}
+.menu {
+	&__list {
+		&__item {
+			clear: both;
+			display: inline-block;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin: 0;
+			white-space: nowrap;
+			color: #000000;
+			font-family: 'Roboto',Arial,sans-serif;
+			list-style: none;
+			list-style-type: none;
+		}
+	}
+	&__link-item {
+		color: #000000;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+.address {
+}
+.header-contacts {
+}
+.logo {
+	&__description {}
+}
+.button {
+}
+.header-body {
+	&__title {}
+	&__description {}
+	&__button {}
+}
+.button-shadow {
+}
