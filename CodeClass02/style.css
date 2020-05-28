@@ -1,0 +1,1993 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,600,600i,700,700i&display=swap);
+
+body{
+	font-family: 'Roboto',Arial,sans-serif;
+	color: #000;
+	background: #f3f6f9;
+}
+
+header, section, footer{
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-style: normal;
+	font-weight: 700;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 48px;
+}
+
+h2{
+	font-size: 37px;
+	font-weight: 600;
+}
+
+h6{
+	text-transform: none;
+}
+
+p{
+	font-size: 16px;
+}
+
+a{
+	font-style: none;
+	color: #000;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.btn-shadow{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+	background: #f5a526;
+	box-shadow: 2px 4px 0px 0px rgba(198,127,14,1);
+	padding: 18px 38px;
+	border-radius: 50px;
+}
+
+.btn-i{
+	padding: 2px 15px;
+	border: 1px solid #737373;
+	border-radius: 50px;
+}
+
+.btn-i img{
+	width: 20px;
+	left:30px;
+}
+
+.be-static{
+	position: static;
+}
+
+.carousel-i-p{
+	background-image: url('img/sliderarrow.png');
+	width: 18px;
+	height: 28px;
+	opacity: 1;
+	margin-top: 25%;
+	margin-right: 7%;
+
+}
+
+.carousel-i-n{
+	background-image: url('img/sliderarrow.png');
+	width: 18px;
+	height: 28px;
+	opacity: 1;
+	margin-top: 25%;
+	margin-left: 7%;
+	transform: rotate(180deg);
+}
+
+.carousel__block{
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+
+.input-r{
+	outline:none;
+	border: 1px solid #d7d7d7;
+	border-radius: 50px;
+	width: 370px;
+	padding: 10px 20px;
+	margin-left: ;
+	margin-bottom: 20px;
+}
+
+
+
+
+/* ----- Бургер меню ------ */
+
+.burger-menu__button{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 30;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .5);
+}
+
+.burger-menu__button:hover .burger-menu__lines{
+	filter: brightness(0.7);
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before{
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background: #1500ff;
+}
+
+.burger-menu__lines{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::before{
+	content: '';
+	top: -9px;
+}
+
+.burger-menu__lines::after{
+	content: '';
+	top: 9px;
+}
+
+.burger-menu_active .burger-menu__lines{
+	background: transparent;
+}
+
+.burger-menu_active .burger-menu__lines::before{
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.burger-menu_active .burger-menu__lines::after{
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+.burger-menu__nav{
+	padding-top: 80px;
+	position: fixed;
+	z-index: 20;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	background: #fff;
+	overflow-y: auto;
+	right: -100%;
+	padding-left: 20px;
+	margin-top: -10px;
+}
+
+.burger-menu_active .burger-menu__nav{
+	right: 0;
+}
+
+.burger-menu__link{
+	padding: 10px;
+	font-size: 24px;
+	letter-spacing: 5px;
+	color: #000	;
+	text-overflow: uppercase;
+	text-decoration: none;
+}
+
+.burger-menu__overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.burger-menu_active .burger-menu__overlay{
+	display: block;
+	background: rgba(0, 0, 0, .5);
+}
+
+
+
+/* ------- Первый экран -------- */
+
+header{
+	background: url('img/headerbg.webp') no-repeat bottom right;
+	background-size: 95% 50%;
+	height: 1050px;
+	padding-top: 50px;
+}
+
+#menu-fix{
+	position: fixed;
+	top:0px;
+	left: 0;
+	z-index: 100;
+}
+
+.menu-item{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 13px;
+	padding: 0 15px;
+	margin: 17px 0;
+	text-align: center;
+}
+
+.menu-item a:hover{
+	color: #000;
+}
+
+.logo{
+	height: 90px;
+	margin-top: 15px;
+}
+
+.logo img{
+	width: 90px;
+}
+
+.logo__text p{
+	font-size: 14px;
+	color: #737373;
+	text-align: center;
+}
+
+.logo__text img{
+	width: 200px;
+}
+
+.offer-cont{
+	position: relative;
+	z-index: 2;
+}
+
+.offer-cont__title{
+	margin-top: 60px;
+}
+
+.offer-cont__text{
+	width: 80%;
+}
+
+.offer-cont__text p{
+	padding: 30px 0;
+}
+
+.offer-cont__text img{
+	position: absolute;
+	right: 100px;
+}
+
+.hero__bg{
+	background: url('img/bg-hero.png') no-repeat bottom right;
+	background-size: 100% 100%;
+	height: 820px;
+	width: 700px;
+	position: relative;
+	z-index: 2;
+	right: 0;
+	top: 0;
+}
+
+.address{
+	text-align: right;
+	font-size: 15px;
+}
+
+.feedback{
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.feedback a{
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.feedback__franchise{
+	padding-top: 7px;
+	font-size: 17px;
+	color: #383838;
+}
+
+.feedback__pay{
+	font-size: 20px;
+	color: #f5a526;
+}
+
+.feedback__pay:hover{
+	color: #f5a526;
+}
+
+.feedback__phones{
+	font-size: 17px;
+	font-weight: 300;
+	padding: 3px 50px 3px 25px;
+}
+
+.feedback__phones:hover{
+	color: #000;
+}
+
+.offer-cont__btn:hover{
+	color: #fff;
+	box-shadow: 0 0 20px 0 rgba(255,255,255,.3) inset, 
+	2px 4px 30px 0 rgba(198,127,14,1), 
+	2px 4px 0px 0px rgba(198,127,14,1);
+}
+
+.bg-plus{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	background: url('img/bg-plus.png') no-repeat;
+	top: 20px;
+	left: 45%;
+}
+
+
+
+/* ------- Второй экран -------- */
+
+.goal{
+	background: #fff;
+}
+
+.goal-l{
+	position: relative;
+	z-index: 2;
+}
+
+.goal-l__title{
+	padding-top: 100px;
+}
+
+.goal-l__text{
+	padding-top: 20px;
+	width: 350px;
+}
+
+.goal-l__question{
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.goal-l__arrow-right{
+	text-align: right;
+	padding-top: 30px;
+	margin-right: -100px;
+}
+
+.goal-r{
+	background: url('img/bg-notebook.png') no-repeat top center;
+	background-size: 100% 95%;
+	width: 850px;
+	height: 530px;
+	position: relative;
+	z-index: 1;
+	left: -120px;
+	right: 0;
+	top: 40px;
+	margin-bottom: 50px;
+}
+
+.goal-r__title{
+	color: #e6eaee;
+	font-size: 180px;
+	letter-spacing: -0.12em;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+}
+
+.text{
+	padding: 15px 220px;
+}
+
+.circle-item{
+	width: 15px;
+	height: 15px;
+	background: #f5a526;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+.goal-r__item p{
+	width: 370px;
+	font-size: 14px;
+}
+
+
+
+/* ------- Третий экран -------- */
+
+.courses{
+	padding-top: 70px;
+	height: 1000px;
+}
+
+.courses__tabs{
+	position: static;
+	border: 1px solid #d7d7d7;
+	border-radius: 5px;
+}
+
+.courses__tabs li{
+	opacity: 1;
+	text-indent: 0;
+	position: relative;
+    height: auto;
+	width: 100%;
+	padding: 27px 0;
+	margin: 0;
+	background-clip: border-box;
+	color: #ff8562;
+	font-weight: 300;
+	font-size: 22px;
+	text-align: center;
+	border-top: none;
+	border-bottom: none;
+	background: rgb(0,0,0,0);
+	transition: all 0.5s ease;
+}
+
+.courses__tabs li:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	height: 55px;
+	width: 2px;
+	top: 18%;
+	border-right: 1.5px solid #d7d7d7;
+}
+
+.courses__tabs li:last-child:after{
+	border-right: none;
+}
+
+.courses__tabs .active{
+	background: #3399fe;
+}
+.courses__tabs li:hover{
+	background: #3399fe;
+	opacity: 1;
+}
+
+.carousel__list-back{
+	background: #fff;
+	width: 730px;
+	height: 470px;
+	margin: 30px auto 100px 14%;
+	margin-top: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, .02);
+	position: relative;
+}
+
+.carousel__list-one{
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	background: #fff;
+	width: 530px;
+	height: 485px;
+	border-radius: 10px;
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, .03);
+}
+
+.carousel__list-two{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	background: #fff;
+	width: 480px;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.bookmark-one{
+	width: 80px;
+	height: 150px;
+	background: #f5a526;
+	position: absolute;
+	right: 40px;
+	top: -15px;
+}
+
+.bookmark-one img{
+	padding: 30px 5px;
+	width: 100%;
+}
+
+.bookmark-tow{
+	width: 40px;
+	height: 40px;
+	background: #f5a526;
+	transform: rotate(45deg);
+	position: absolute;
+	right: 20px;
+	top: -7px;
+	z-index: -30;
+}
+
+.carousel-caption{
+	top: 80px;
+	left: 25%;
+	text-align: left;
+	width: 405px;
+	color: #000;
+}
+
+.carousel-caption h5{
+	position: static;
+	margin: 0;
+	font-size: 35px;
+}
+
+.carousel__description{
+	font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.carousel-caption span{
+	font-weight: 700;
+}
+
+.carousel-caption__text{
+	border-top: 1px solid #d7d7d7;
+	border-bottom: 1px solid #d7d7d7;
+	margin: 30px 0;
+	padding: 15px 0;
+}
+
+.courses__moreinfo{
+	border-bottom: 1px solid #ff8562;
+	width: 175px;
+	margin-bottom: 70px;
+}
+
+.courses__moreinfo-link{
+	color: #ff8562;
+	padding: 0;
+}
+
+.courses__moreinfo-link:hover{
+	color: #ff8562;
+}
+
+.courses__moreinfo-link img{
+	padding-right: 15px;
+}
+
+.courses-carousel__link-text{
+	border: 1px solid #3399fe;
+	color: #3399fe;
+	padding: 10px 15px;
+}
+
+.courses-carousel__link-text:hover{
+	color: #3399fe;
+}
+
+.courses-carousel__link-text img{
+	margin-right: 15px;
+	width: 18px;
+}
+
+.courses__copybook{
+	position: absolute;
+	bottom: -200px;
+	right: -120px;
+}
+
+.carousel-control-prev{
+	opacity: 1;
+	justify-content: flex-start;
+}
+
+.carousel-control-next{
+	opacity: 1;
+	justify-content: flex-end;
+}
+
+.circle{
+	width: 160px;
+	height: 190px;
+	background: url('img/circle.png') no-repeat;
+	background-size: 100%;
+	position: absolute;
+}
+
+
+
+/* ------- Четвертый экран -------- */
+
+
+.advantages{
+	text-align: center;
+	padding-bottom: 100px;
+	z-index: 1;
+}
+
+.advantages img{
+	width: 40px;
+}
+
+.advantages__item{
+	padding: 50px 25px;
+}
+
+.advantages p{
+	font-size: 14px;
+	width: 65%;
+	text-align: left;
+	margin: auto 0;
+}
+
+.advantages__img{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #3399fe;
+	border-radius: 50%;
+	margin-right: 30px;
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+/* ------- Пятый экран -------- */
+
+
+.form-consultation{
+	background: url('img/student.webp') no-repeat;
+	background-size: 100%;
+}
+
+.circle-tow{
+	z-index: 50;
+	left: 13%;
+}
+
+.form-consultation__form{
+	background: #fff;
+	margin: 80px 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.form-consultation__form h3, .form-consultation__form p{
+	padding: 10px 40px 10px 60px;
+
+}
+
+.form-consultation__form span{
+	color: #f5a526;
+}
+
+.form-consultation__text{
+	font-size: 14px;
+}
+
+.form-consultation__inputs{
+	text-align: center;
+}
+
+.form-consultation__item[type="submit"]{
+	border: none;
+	background: #f5a526;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/* ------- Шестой экран -------- */
+
+
+.students{
+	background: url('img/bg-success.webp') no-repeat;
+	background-position: top left -390px;
+	background-size: 165%;
+	position: absolute;
+	width: 100%;
+	text-align: right;
+	margin-top: -155px;
+}
+
+.students__title{
+	color: #fff;
+	margin-top: 150px;
+	padding-left: 40px;
+	padding-right: 	50px;
+	font-size: 31px;
+	margin-bottom: 140px;
+}
+
+.students #carouselExampleIndicators{
+	margin-bottom: 270px;
+}
+
+
+.students__carousel__points li{
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background: transparent;
+	opacity: 1;
+	margin: auto 5px;
+}
+
+.students__carousel__points .active{
+	background: #fff;
+}
+
+.students__carousel-list{
+	width: 580px;
+	height: 430px;
+	background: #fff;
+	margin-bottom: 130px;
+	border-radius: 5px;
+}
+
+.students__caption{
+	text-align: right;
+	top: 0;
+	left: 5%;
+	padding-left: 50px;
+}
+
+.students__caption ul p::before{
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 11px;
+	height: 11px;
+	background: #f5a526;
+	border-radius: 50%;
+	margin: 7px 0;
+}
+
+.students__caption{
+	padding-right: 35px;
+}
+
+.carousel__title{
+	padding: 0;
+	margin-top: 30px;
+	color: #3399fe;
+
+}
+
+.carousel__age{
+	color: #b4b4b4;
+	margin-bottom: 30px;
+}
+
+.students__carousel-foto{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 60px;
+	right: -280px;
+}
+
+.students__carousel-foto img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.students .carousel-i-p, .students .carousel-i-n{
+	background-image: url('img/sliderarrowwhite.png');
+}
+
+.students .carousel__block{
+	border-color: #fff;
+}
+
+.students .carousel-control-prev, .students .carousel-control-next{
+	bottom: 0;
+	top: auto; 
+}
+
+.students .carousel-control-prev{
+	left: 250px;
+}
+
+.students .carousel-control-next{
+	right: 250px;
+}
+
+
+
+/* ------- Седьмой экран -------- */
+
+.reviews{
+	background: url('img/curvedbg2.png') no-repeat bottom;
+	background-size: 160%;
+	margin-top: 1120px;
+}
+
+.reviews__title{
+	width: 500px;
+	margin-bottom: 40px;
+}
+
+.reviews__img-l, .reviews__img-r{
+	background: #fff;
+	margin-bottom: 60px;
+}
+
+.reviews__img-l{
+	margin-right: 20px;
+}
+
+.reviews__img-r{
+	margin-left: 20px;
+}
+
+.reviews__img{
+	width: 100%;
+	padding: 20px;
+}
+
+.reviews__iframe-block{
+	background: #fff;
+	margin-bottom: 130px;
+}
+
+.reviews__iframe-block iframe{
+	width: 100%;
+	padding: 13px;
+	height: 135px;
+}
+
+
+
+/* ------- Восьмой экран -------- */
+
+.confidence{
+	background: #fdfdfd url('img/info-circle.png') no-repeat bottom center;
+	background-size: 60%;
+	height: 950px;
+	padding-top: 50px;
+}
+
+.confidence__btn{
+	padding-right: 60px;
+	padding-left: 60px;
+}
+
+.confidence__btn:hover{
+	color: #fff;
+}
+
+.confidence__title{
+	margin-top: 120px;
+	width: 350px;
+	margin-left: 70px;
+}
+
+.confidence__title span{
+	 color: #f5a526;
+}
+
+.confidence__arrow{
+	height: 90px;
+	margin-top: 50px;
+	margin-left: 10px;
+}
+
+.confidence__info{
+	height: 400px;
+}
+
+.confidence__info h2{
+	color: #f5a526;
+	margin-bottom: 15px;
+}
+
+.info-one{
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+}
+
+.info-two{
+	text-align: right;
+	position: absolute;
+	top: 30%;
+	left: -20px;
+}
+
+.info-three{
+	text-align: center;
+	position: absolute;
+	right: 10px;
+	top: -30px;
+}
+
+.info-four{
+	position: absolute;
+	left: 100px;
+	right: -120px;
+	top: 30%;
+}
+
+.info-five{
+	position: absolute;
+	bottom: 0;
+	left: -20px;
+}
+
+
+/* ------- Девятый экран -------- */
+
+.teachers{
+	background: url('img/bg-teacher.webp') no-repeat;
+	background-position: top left -280px;
+	background-size: 135%;
+	position: absolute;
+	width: 100%;
+	margin-top: -160px;
+}
+
+.teachers-record{
+	padding-top: 200px;
+}
+
+.teachers-record__title{
+	color: #fff;
+	line-height: 1.55;
+
+}
+
+.teachers-record__input{
+	margin-top: 50px;
+	padding: 13px 23px;
+	width: 300px;
+	background: rgba(255, 255, 255, .4);
+	border-color: #fff;
+	color: #fff;
+	font-size: 20px;
+}
+
+.second-input {
+	margin-left: 40px;
+}
+
+.teachers-record__input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.teachers-record__input[type="submit"]{
+	background: #3399fe;
+	border-color: #3399fe;
+	width: 180px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 20px;
+	margin-left: 80px;
+}
+
+
+.teachers-info__title{
+	margin-top: 150px;
+	text-align: right;
+}
+
+.teachers-info{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.teachers__foto{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+.teachers__characteristic{
+	font-size: 14px;
+}
+
+
+/* ------- Десятый экран -------- */
+
+.question-form{
+	margin-top: 980px;
+	padding-top: 5px;
+}
+
+.bg-box{
+	position: absolute;
+	left: 0;
+	width: 1300px;
+	height: 170px;
+	background: #fff;
+	border: 10px solid #3399fe;
+	border-left: none;
+
+}
+
+.question-form__title{
+	margin: 40px 0;
+}
+
+.question-form__input{
+	color: #000;
+	background: transparent;
+	border-color: rgba(0, 0, 0, .2);
+	margin-top: 60px;
+	margin-left: ;
+}
+
+.question-form__input::placeholder{
+	color: #000;
+}
+
+.question-form__btn{
+	margin-top: 60px;
+}
+
+
+/* ------- Одиннадцатый экран -------- */
+
+.classes__title{
+	text-align: center;
+	margin: 60px 0;
+}
+
+.classes .carousel-item{
+	height: 500px;
+	width: 900px;
+	margin-left: 9%;
+}
+
+.classes .carousel-item img{
+	width: 100%;
+}
+
+.carousel__block-bg{
+	border: none;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, .07);
+	width: 50px;
+	height: 50px;
+	padding-top: 13px;
+}
+.carousel__block-bg .carousel-i-p, .carousel__block-bg .carousel-i-n{
+	margin: 0;
+	width: 13px;
+	height: auto;
+}
+
+.indicators-points{
+	position: static;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.indicators-points li{
+	width: 8px;
+	height: 8px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	opacity: 1;
+	margin: auto 10px;
+	background: rgba(0, 0, 0, .3);
+}
+
+.indicators-points .active{
+	background: #000;
+}
+
+
+/* ------- Одиннадцатый экран -------- */
+
+
+/* ------- Footer -------- */
+
+
+footer{
+	background: #414951;
+	color: #fff;
+}
+
+footer a:hover{
+	color: #fff;
+}
+
+.footer__logo{
+	width: 180px;
+	padding: 50px 0 25px;
+	border-bottom: 2px solid #525961;
+}
+
+.footer__text, .footer__address, .footer__liks li{
+	font-size: 13px;
+
+}
+
+.footer__text{
+	padding-top: 75px;
+	line-height: 1.8em;
+}
+
+.footer__info{
+	text-align: right;
+	padding-right: 10px;
+}
+
+.footer__address{
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.footer__contacts{
+	margin-top: 15px;
+}
+
+.footer__liks{
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer__liks li{
+	position: relative;
+	margin-left: 100px;
+}
+
+.footer__liks div{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 6px;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.footer__liks a{
+	color: #fff;
+	margin-left: 30px;
+}
+
+.footer__insta img{
+	width: 50px;
+	margin-top: -70px;
+}
+
+.footer__feedback{
+	border: none;
+	display: block;
+	padding: 0;
+	margin-top: 10px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.footer__feedback:hover{
+	color: #fff;
+}
+
+.footer__feedback img{
+	width: 15px;
+	margin-right: 20px;
+}
+
+.footer__feedback__email{
+	border-bottom: 2px solid #525961;
+	border-radius: 0;
+	padding-bottom: 5px;
+}
+
+.footer__feedback__email img{
+	margin-right: 3px;
+}
+
+.footer-ip{
+	background: #394047;
+}
+
+.footer-ip__text{
+	text-align: right;
+	margin: 10px 0 15px;
+	font-size: 13px;
+}
+
+.footer__offer{
+	font-size: 13px;
+	color: #fff;
+}
+
+
+
+
+
+
+/* ------- Адаптивность -------- */
+
+
+
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 992px){
+	
+}
+
+
+@media only screen and (min-width: 992px){
+	.menu-fix{
+		display: block;
+	}
+	.burger-menu{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 991px) {
+	.menu-fix, .menu-container, .menu-container li{
+		display: none;
+	}
+	.burger-menu{
+		display: block;
+	}
+}
+
+
+@media screen and (max-width: 1200px){
+
+	/* ------- Header -------- */
+
+	header{
+		background: url('img/headerbg.webp') no-repeat bottom 0 right -300px;
+		background-size: 135% 75%;
+		height: 1100px;
+	}
+
+	.offer-cont__text img{
+		right: 0px;
+	}
+
+	/* ------- Второй экран -------- */
+
+	.goal-l__text{
+		width: 100%;
+	}
+
+	.goal-l__arrow-right{
+		position: absolute;
+		text-align: right;
+		top: 650px;
+		left: -100px;
+	}
+
+	.goal-r{
+		left: 50px;
+		right: 0;
+		margin-top: 50px;
+	}
+
+
+	/* ------- Третий экран -------- */
+
+	.courses__copybook{
+		width: 60%;
+		bottom: -170px;
+		right: -50px;
+	}
+
+
+	/* ------- Пятый экран -------- */
+
+	.form-consultation{
+		background: url('img/student.webp') no-repeat;
+		background-size: 128%;
+	}
+
+	.form-consultation__form{
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
+	.circle-tow{
+		display: none;
+	}
+
+	/* ------- Шестой экран -------- */
+
+	.students{
+		background-position: top left -800px;
+		background-size: 270%;
+	}
+
+
+	/* ------- Восьмой экран -------- */
+
+	.confidence{
+		padding-top: 30px;
+		background: #fdfdfd url('img/info-circle.png') no-repeat bottom right 20px;
+		background-size: 90%;
+	}
+
+	.info-three{
+		top: 0;
+	}
+
+	.info-four{
+		top: 17%;
+	}
+
+	.info-five{
+		top: 57%;
+		left: -40px;
+
+	}
+
+
+	/* ------- Девятый экран -------- */
+
+	.bg-box{
+		width: 80%;
+	}
+
+	.teachers{
+		background-position: top left -450px;
+		background-size: 195%;
+	}
+
+	.teachers-record{
+		margin-top: -70px;
+	}
+
+	.teachers-record__input{
+		width: 200px;
+		margin-right: 250px;
+		margin-left: -30px;
+	}
+
+	.second-input{
+		margin-right: 0px;
+	}
+
+	.teachers-record__input[type="submit"], .question-form__btn[type="submit"]{
+		margin-left: 50px;
+	}
+
+
+	/* ------- Десятый экран -------- */
+
+	.classes .carousel-item{
+		height: 500px;
+		width: 760px;
+		margin-left: 9%;
+	}
+
+
+	/* ------- Footer -------- */
+
+	.footer__address{
+		width: 150px;
+		margin-right: 5px;
+	}
+
+	.footer__insta img{
+		width: 40px;
+		margin-top: -25px;
+	}
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 576px){
+	
+
+	.container{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+
+	/* ------- Header -------- */
+
+	header{
+		padding-top: 10px;
+		background: url('img/headerbg.webp') no-repeat bottom 0 right -500px;
+		background-size: 400% 75%;
+		height: 780px;
+	}
+
+	.logo-absolute{
+		position: absolute;
+		top: -115%;
+	}
+
+	.logo{
+		height: 40px;
+		margin-top: 15px;
+	}
+
+	.logo img{
+		width: 40px;
+	}
+
+	.logo__text p{
+		display: none;
+	}
+
+	.logo__text img{
+		width: 110px;
+		margin-top: 10px;
+	}
+
+	.offer-cont__title{
+		margin-top: 0;
+	}
+
+	.offer-cont__text img{
+		left: 320px;
+	}
+
+	.offer-cont__btn{
+		font-size: 16px;
+		padding: 15px 10px;
+	}
+
+	.hero__bg{
+		display: none;
+		visibility: hidden;
+	}
+
+	.offer-cont__title{
+		font-size: 26px;
+	}
+	
+	.offer .feedback a{
+		display: block;
+	}
+
+	.offer .address{
+		margin-top: 60px;
+		text-align: center;
+	}
+
+	.feedback__pay{
+		margin: 20px 0;
+	}
+	
+	.feedback__phones-fist{
+		margin-top: 30px;
+	}
+
+	.feedback__phones{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.feedback__franchise{
+		margin-top: 0px;
+	}
+
+
+	/* ------- Второй экран -------- */
+
+	.goal-l__title{
+		font-size: 20px;
+		margin-right: 30px;
+	}
+	
+	.goal-l__arrow-right{
+		display: none;
+	}
+
+	.goal-r{
+		background: url('img/bg-notebook.png') no-repeat top center;
+		background-size: 100% 95%;
+		width: 400px;
+		height: 300px;
+		left: 0;
+		right: 0;
+		top: 50px;
+		margin-bottom: 70px;
+	}
+
+	.goal-r__title{
+		font-size: 100px;
+		text-align: left;
+		position: absolute;
+		top: -100px;
+	}
+
+	.text {
+		padding-left: 60px;
+		padding-right: 0;
+		padding-top: 30px;
+	}
+
+	.goal-r__item p{
+		width: 230px;
+		font-size: 12px;
+	}
+
+
+	/* ------- Третий экран -------- */
+
+	.courses{
+		height: 900px;
+	}
+
+	.courses__tabs{
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	.courses__tabs li{
+		font-size: 14px;
+		font-weight: 400;
+		padding-right: 8px;
+	}
+
+	.courses .carousel-control-prev, .courses .carousel-control-next, .courses__copybook, .carousel__list-one{
+		display: none;
+	}
+
+	.carousel__list-back{
+		margin-left: 5px;
+		width: 98%;
+		height: 550px;
+		border-radius: 3px;
+	}
+
+	.carousel-caption{
+		display: block;
+		left: 0;
+		width: 90%;
+		top: 15px;
+		left: 15px;
+	}
+
+	.courses-carousel__link-text img{
+		display: inline-block;
+		margin-right: 5px;
+	}
+
+	.courses-carousel__link-text span{
+		display: inline-block;
+	}
+
+	.courses-carousel__link-text{
+		display: block;
+		padding: 5px 10px;
+		margin: 0;
+	}
+
+	.circle, .bookmark-one, .bookmark-tow {
+		display: none;
+	}
+	
+	/* ------- Четвертый экран -------- */
+	
+	.advantages__item{
+		padding: 20px 25px;
+	}
+
+	.advantages__item p{
+		font-size: 12px;
+		width: 55%;
+	}
+
+	/* ------- Пятый экран -------- */
+
+	.form-consultation{
+		background: url('img/student.webp') no-repeat ;
+		background-size: 500%;
+	}
+
+	.form-consultation__form {
+	    background: #fff;
+	    margin: 0px 5px;
+	    padding-top: 30px;
+	    padding-bottom: 50px;
+	    margin-bottom: 30px;
+	}
+
+	.form-consultation__form h3, .form-consultation__form p{
+		padding: 10px 0px 10px 5px;
+	}
+
+	.form-consultation__item{
+		width: 270px;
+	}
+
+	/* ------- Шестой экран -------- */
+
+	.students {
+	    background: url(img/bg-success.webp) no-repeat;
+	    background-position: top right 43%;
+	    background-size: 600%;
+	    position: absolute;
+	    width: 100%;
+	    text-align: right;
+	    margin-top: -25%;
+	}
+
+	.students__title{
+		font-size: 24px;
+		text-align: center;
+		margin-top: 100px;
+		margin-bottom: 30px;
+	}
+
+	.students__carousel-list{
+		width: 98%;
+		height: 470px;
+		margin-left: 5px;
+		margin-top: 100px;
+		padding-top: 100px;
+	}
+
+	.students__caption ul p::before{
+		margin-right: 10px;
+	}
+
+	.students__carousel-foto{
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		top: 0px;
+		right: 10px;
+	}
+
+	.students__carousel-foto img{
+		width: 100%;
+		border-radius: 50%;
+	}
+
+	.carousel__title{
+		margin-top: 100px;
+	}
+
+	.students .carousel-control-prev{
+		left: 30px;
+		display: block;
+		width: auto;
+	}
+
+	.students .carousel-control-next{
+		right: 30px;
+		display: block;
+		width: auto;
+	}
+
+
+	/* ------- Седьмой экран -------- */
+
+	.reviews__title{
+		font-size: 24px;
+		width: 100%;
+		text-align: center;
+		padding: 0 15px;
+		margin: 0;
+	}
+
+	.reviews__img-l, .reviews__img-r{
+		margin: 15px 5px;
+	}
+
+	.reviews__iframe-block{
+		width: 250px;
+		margin-left: 20%;
+		margin-bottom: 30px;
+	}
+
+
+	/* ------- Восьмой экран -------- */
+
+
+	.confidence{
+		background: #fdfdfd url('img/info-circle.png') no-repeat bottom left -20px;
+		background-size: 150%;
+		height: 800px;
+	}
+
+	.confidence__btn{
+		font-size: 16px;
+	}
+
+	.confidence__title{
+		margin-left: 0;
+		font-size: 34px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.confidence__arrow{
+		display: none;
+	}
+
+	.confidence__info{
+		height: auto;
+	}
+
+	.info-one, .info-two, .info-three, .info-four, .info-five{
+		position: static;
+		display: flex;
+	}
+
+	.confidence__info h2{
+		display: inline-block;
+		font-size: 28px;
+		width: 35%;
+		text-align: right;
+		margin-right: 10px;
+	}
+
+	.confidence__info p{
+		display: inline-block;
+		width: 60%;
+		text-align: left;
+		font-size: 14px;
+		margin-right: 5px;
+	}
+
+
+	/* ------- Девятый экран -------- */
+
+	.teachers{
+		background: url('img/orangebg.png') no-repeat;
+		background-position: top left -200px;
+		background-size: 250%;
+		position: absolute;
+		width: 100%;
+		margin-top: -130px;
+	}
+
+	.teachers-record{
+		margin-top: -100px;
+	}
+
+	.teachers-record__title{
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.teachers-record__input{
+		margin-top: 10px;
+		padding: 13px 23px;
+		width: 400px;
+		background: rgba(255, 255, 255, .4);
+		border-color: #fff;
+		color: #fff;
+		font-size: 20px;
+		margin-left: 5px;
+		margin-right: 0;
+	}
+
+	.second-input{
+		margin-left: 5px;
+	}
+
+	.teachers-record__input[type="submit"]{
+		margin-left: 120px;
+	}
+
+	.teachers-info__title h2{
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.teachers__foto{
+		margin: 5px;
+	}
+
+	.teachers__characteristic p{
+		font-size: 14px;
+	}
+
+
+	/* ------- Десятый экран -------- */
+
+	.question-form{
+		margin-top: 1300px;
+		padding-top: 5px;
+	}
+
+	.bg-box{
+		width: 100%;
+		border-right: none;
+		height: 300px;
+	}
+
+	.question-form__title, .question-form__text{
+		display: none;
+	}
+
+	.question-form__input{
+		border-color: #e6eaee;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
+	.question-form__btn{
+		margin-top: 30px;
+	}
+
+	/* ------- Одиннадцатый экран -------- */
+
+	.classes__title{
+		font-size: 18px;
+	}
+
+	.classes .carousel-item{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.classes .carousel-item {
+    	height: auto;
+    } 
+
+    .classes .carousel__block-bg{
+    	background: rgba(255, 255, 255, .8);
+    	width: 35px;
+    	height: 35px;
+    	padding-top: 5px;
+    	margin: auto 5px;
+    }
+
+
+	/* ------- Footer -------- */
+
+	footer{
+		text-align: center;
+	}
+
+	.footer__logo{
+		padding: 20px 0 10px;
+	}
+
+	.footer__text{
+		padding-top: 10px;
+	}
+
+	.footer__info{
+		text-align: center;
+	}
+
+	.footer__liks{
+		margin-top: 5px;
+	}
+
+	.footer__liks li{
+		margin-left: 0;
+	}
+
+	.footer__liks div{
+		left: 100px;
+	}
+
+	.footer__liks a{
+		margin-left: 3px;
+		padding: 0;
+	}
+
+	.footer__address{
+		display: block;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+
+	.footer__insta{
+		position: static;
+	}
+
+	.footer__feedback__email{
+		margin-bottom: 20px;
+		border-bottom: none;
+	}
+
+	.footer-ip p{
+		text-align: center;
+	}
+
+
+
+
+}
+
+
+@media only screen and (max-width: 376px){
+	.students {
+	    background-size: 700%;
+	}
+	.reviews__iframe-block{
+		margin-left: 15%;
+	}
+
+	.teachers-record__input{
+		width: 350px;
+	}
+
+	.teachers-record__input[type="submit"]{
+		margin-left: 90px;
+	}
+
+	.bg-plus{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 321px){
+	.logo-absolute{
+		top: -100%;
+	}
+
+	.offer-cont__text img{
+		left: 220px;
+	}
+
+	.students {
+	    background-size: 800%;
+	}
+
+	.reviews__iframe-block{
+		margin-left: 9%;
+	}
+
+	.teachers-record__input{
+		width: 300px;
+	}
+
+	.teachers-record__input[type="submit"]{
+		margin-left: 60px;
+	}
+}
+
+
